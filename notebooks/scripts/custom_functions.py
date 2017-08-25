@@ -94,8 +94,9 @@ def get_ss_cs(data, baseline, padding=False, show=False):
     padding : adds a contour of zero value around the dynamic spectrum
     '''
     if padding:
-        I_pad = np.vstack((data, np.zeros(data.shape)))
-        I_pad = np.hstack((I_pad, np.zeros(I_pad.shape)))
+        val = np.mean(data)
+        I_pad = np.vstack((data, np.zeros(data.shape)+val))
+        I_pad = np.hstack((I_pad, np.zeros(I_pad.shape)+val))
         I_pad = np.roll(np.roll(I_pad, data.shape[0]/2, axis=0), data.shape[1]/2, axis=1)
         if show:
             fig = plt.figure(figsize=(11,9))
