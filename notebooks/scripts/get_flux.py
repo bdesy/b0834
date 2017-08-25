@@ -32,9 +32,9 @@ __author__ = 'Beatrice Desy'
 center_freq = 314.5e6                # central frequency of observations, here all DS have been normalized to 314.5MHz
 fD_start, fD_end = -44, 44           # values of doppler frequency where the 'swiping' along parabola will happen,
                                      # -44 to 44 covers the whole SS
-step = 0.1             # step between doppler shift coordinates, 0.1 is good for testing, 0.01 for measuring
-hw =  5.               # in mHz, distance between apex and one end of the arclet
-vw =  0.002            # maximal vertical width of arclet at the apex
+step = 0.01             # step between doppler shift coordinates, 0.1 is good for testing, 0.01 for measuring
+hw =  3.               # in mHz, distance between apex and one end of the arclet
+vw =  0.001            # maximal vertical width of arclet at the apex
 inpath = '/scratch/bdesy/correct_channels/'
 outpath = '' 
 
