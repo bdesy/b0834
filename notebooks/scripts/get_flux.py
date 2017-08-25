@@ -35,7 +35,7 @@ fD_start, fD_end = -44, 44           # values of doppler frequency where the 'sw
 step = 0.01             # step between doppler shift coordinates, 0.1 is good for testing, 0.01 for measuring
 hw =  3.               # in mHz, distance between apex and one end of the arclet
 vw =  0.001            # maximal vertical width of arclet at the apex
-inpath = '/scratch/bdesy/correct_channels/'
+inpath = '/mnt/scratch-lustre/bdesy/b0834/data/normalized_data/correct_channels/'
 outpath = '' 
 
 # Parameters in console to do quickly all frequency bands without playing here in the code
